@@ -5,17 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
-    
-    <h2>Login<br>Selamat Datang Pelaq</h2>
-    <input type="text, email" placeholder="Bubuh username boleh Email pon boleh ">
-    <input type="text" placeholder="Tang ni boh paswed">
-    <a href="#"> Lupa paswed? boleh reset tang ni</a>
-    <button class="login">Login</button>
-    <p>Hang takdak akaun ka? <span><a href="#">Daftar lu</a></span></p>
-    <p>ataupun</p>
-    <button class="loginFb"><img src="Assets/facebook logo.png" alt="">Login dengan Fesbuk</button>
-    <button class="loginGoogle"><img src="Assets/google logo.png" alt="">Login dengan Google</button>
-    <h3>AimanAzmi.dev/Feb2024</h3>
+    <div class="body">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+         
+
+
+        <!--navigation bar start-->
+        <div class="container">
+            <img src="Assets/sidebar.svg" alt="" onclick="openNav()">
+            <p>KesatriaBH.com</p>
+        </div>
+        <!--navigation bar end-->
+        <h3>Login<br>Selamat Datang Kawan</h3>
+        <input type="text, email" placeholder="Bubuh username boleh Email pon boleh ">
+        <input type="text" placeholder="Tang ni boh paswed">
+        <p>Hang lupa paswed? <span><a href="#">Reset tang ni</a></span></p>
+        <button class="login">Login</button>
+        <p>Hang takdak akaun ka? <span><a href="#">Daftar lu</a></span></p>
+        <div class="line">
+            <hr>
+            <p>ataupun</p>
+            <hr>
+        </div>
+        <button class="loginFb"><img src="Assets/facebook logo.png" alt="">Login dengan Fesbuk</button>
+        <button class="loginGoogle"><img src="Assets/google logo.png" alt="">Login dengan Google</button>
+        <h4>AimanAzmi.dev/Feb2024</h4>
+
+
+
+        <!--icon bar-->
+        <div class="icon-bar">
+            <a class="active" href="#"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+            <a href="#"><i class="fa fa-trash"></i></a>
+        </div>
+    </div>
+
+
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
-</html>
+</html

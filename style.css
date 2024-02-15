@@ -1,33 +1,69 @@
-
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.body{
+    margin:auto;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 800px;
+    width: 50%;
+    min-height: 1100px;
     align-items: center;
-    margin-top: 80px;
     gap: 12px;
+    overflow: hidden;
     background: linear-gradient(180deg, #484848 20%, #000000 100%);
 }
-body > h2{
+/*navigation bar start*/
+.container{
+    background-color: #000;
+    height: 60px;
+    max-width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container img{
+    height: 30x;
+    width: 30px;
+}
+.container p{
+color: #8a2424;
+font-weight: bolder;
+font-size: 28px;
+font-family: 'Times New Roman', Times, serif;
+}
+/*navigation bar end*/
+
+header > div{
+    display: flex;
+    flex-direction: row;
+}
+.body > h3{
     text-align: center;
     color: white;
+    font-size: x-large;
+    padding-top: 80px;
 }
-body > input{
+.body > input{
     display: flex;
     border-radius: 10px;
     border-color: rgba(0, 0, 0, 0.08);  
     width: 312px;
     height: 44px;
 }
-body > input::placeholder{
+.body > input::placeholder{
     padding-left: 8px;
 }
-body > a, body > p > span >a{
+.body > p > span >a{
     text-decoration: none;
-    color: #2f89fc;
+    color: #74a5f9;
 }
 button{
     height: 48px;
@@ -37,6 +73,16 @@ button{
     display: flex;
     align-items: center;
     padding-left: 68px;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+hr{
+    width: 124px;
+    line-height: 1px;
 }
 p{
     margin: 4 auto;
@@ -61,8 +107,83 @@ img{
     position: relative;
     right: 58px;
 }
-h3{
+h4{
     color: whitesmoke;
     font-weight: lighter;
     font-size: 12px;
 }
+
+
+
+
+
+
+
+
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #0e64d2;
+  }
+
+
+
+
+
+  .sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 25%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  nav ul li:first-child{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
